@@ -10,14 +10,19 @@ defmodule Cards do
 
       iex> Cards.hello
       :world
-
   """
   def hello do
     :world
   end
 
   def create_deck do
-    ["Ace", "Two", "Three"]
+    values = ["Ace", "Two", "Three", "Four", "Five"]
+    suits = ["Spades", "Clubs", "Hearts", "Diamond"]
+
+    for suit <- suits do
+      suit 
+    end
+
   end
 
   def shuffle(deck) do
