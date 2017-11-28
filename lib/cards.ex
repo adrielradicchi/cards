@@ -2,19 +2,7 @@ defmodule Cards do
   @moduledoc """
   Provides methods for creating and handling a deck of cards
   """
-
-  @doc """
-  Hello world.
-
-  ## Examples
-
-      iex> Cards.hello
-      :world
-  """
-  def hello do
-    :world
-  end
-
+  
   @doc """
   Return a list of strings representing a deck of playing cards
   """
@@ -90,13 +78,6 @@ defmodule Cards do
   Return a hand from one deck
 
   The `hand-size` argument indicates how many cards should be in the hand.
-
-  ## Examples 
-      
-      iex> hand = Cards.create_hand(1)
-      iex> hand 
-      ["Ace of Spades"]
-      
   """
 
   def create_hand(hand_size) do
