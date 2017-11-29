@@ -29,7 +29,14 @@ defmodule Cards do
   end
   
   @doc """
-  Return `true` or `false` if card contains in deck 
+  Return `true` or `false` if card contains in deck
+
+  ## Examples
+      
+      iex> deck = Cards.create_deck
+      iex> Cards.contains?(deck, "Ace of Spades")
+      true
+      
   """
   def contains?(deck, card) do
     Enum.member?(deck, card)
